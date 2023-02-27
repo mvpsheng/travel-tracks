@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Travel photos</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -27,7 +27,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+  - [Built With Vue、SpringBoot、MySQL](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
@@ -50,15 +50,20 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
 - [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [SpringBoot](https://tailwindcss.com/)
+- [MySQL](https://reactjs.org/)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/rYyhwJAxMfES5jNQ9YsP) was to build an application to complete the given user stories.
+* you can see a list of photos that you have added
+* you can add a new photo to the list
+* you can search photos by label
+* When you hover a photo, you can see a label and a delete button
+* you can delete images
+
 
 ## How To Use
 
