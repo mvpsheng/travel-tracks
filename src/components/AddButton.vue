@@ -11,7 +11,7 @@
 <style>
 .addButton {
     
-    position: absolute;
+    position: fixed;
     width: 137px;
     height: 55px;
     /* left: 604.87px;

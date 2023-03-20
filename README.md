@@ -9,6 +9,15 @@ This template should help get you started developing with Vue 3 in Vite.
 * When you hover a photo, you can see a label and a delete button
 * you can delete images
 
+## 主要内容
+* 首页   
+固定的头部（随着用户对页面进行下滑头部栏是固定的） - 搜索框、 添加/上传按钮
+内容 - 展示当前所有图片
+
+* 添加上传页面 （点击上传按钮时进入上传页面，进行图片上传流程）
+
+* 编辑和查看图片故事（之后附加）
+
 ## 实现过程
 
 1. 主页打开调用get请求，获取图片对象数据， for循环加载图片。
@@ -19,7 +28,7 @@ This template should help get you started developing with Vue 3 in Vite.
 ## 请求接口
 
 * 获取全部图片 
-* 上传图片
+* 上传图片 
 * 删除图片
 * 按label查询图片
 

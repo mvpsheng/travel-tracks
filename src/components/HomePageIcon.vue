@@ -10,7 +10,7 @@
 </template>
 <style>
 .homePageIconPanel {
-    position: absolute;
+    position: fixed;
     width: 300px;
     height: 55px;
     /* left: 99px;

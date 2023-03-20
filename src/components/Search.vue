@@ -1,10 +1,36 @@
 <script>
+export default {
+    data: () => ({
+    fileLabel:'',
+    imageFile: '',
+    return: {
+        imageFile: ''
+    }
+  }),
+  methods: {
+    getImage() {
+      console.log("开始发送,找图：");
+    //   console.log(this.fileLabel);
+  const url = `http://localhost:8080/api/upload/getImages`;
 
+  fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    this.imageFile = data;
+    console.log('收到图了');
+    console.log(this.imageFile[0]);
+    // Do something with the image data
+  })
+  .catch(error => console.error(error));
+    }
+  }
+}
 </script>
 <template>
     <div class="searchPanel">
         <img src="./images/searchIcon.png" alt="" class="searchIcon">
-        <input type="search" class="searchInput">
+        <input type="search" class="searchInput" v-model="this.fileLabel">
+        <button class="searchSubmit" @click="getImage">找图</button>
     </div>
 </template>
 
@@ -12,7 +38,7 @@
 .searchPanel {
     box-sizing: border-box;
 
-    position: absolute;
+    position: fixed;
     width: 300px;
     height: 55px;
     /* left: -291px;
@@ -43,5 +69,11 @@
     border: 1px solid #BDBDBD;
     border-color:aliceblue;
     border-radius: 12px;
+}
+.searchSubmit {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  opacity: 0;
 }
 </style>
